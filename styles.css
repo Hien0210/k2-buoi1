@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.button,.button2,.button3  {
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.button2{
+  margin-right: 10px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+body {
+  
+  padding-bottom: 200px;
+  transition: all 0.4s linear;
+}
+#main {
+  padding-top: 70px;
+  
+  transition: all 0.4s linear;
+}
+#main .container form {
+  background-color: white;
+  padding: 12px;
+  padding-left: 0px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  max-width: 400px;
+  margin: 10px auto;
+  display: flex;
+}
+#main .container form input {
+  border: none;
+  flex: 1;
+}
+#main .container form input:focus {
+  outline: none;
+}
+#main .container form button {
+  border: none;
+  padding: 10px 20px;
+  background-color: grey;
+  color: white;
+}
+
+#main .container h3 {
+  text-align: center;
+  font-size: 38px;  
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: var(--titleText);
+  text-transform: uppercase;
+}
+
+#main .container .todolist-container {
+  margin: 0 auto;
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 30px 30px;
+  margin-top: 40px;
+}
+#main .container .todolist-container .item {
+  padding: 15px;  
+  border: 1px solid gray;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+#main .container .todolist-container .item .name-todo {
+  flex: 1;
+  color: var(--colorText);
+}
+.search-list{
+    z-index: 1000;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    max-height: 250px;
+    overflow-y: auto;
+    width: 30%;
+    background-color: #f7f7f7;
+
+    box-shadow: 0 1px 12px rgb(180 180 180);
+    list-style: none;
+    }
+.search-item {
+    width: 100%;
+}
